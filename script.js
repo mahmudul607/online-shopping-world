@@ -15,3 +15,50 @@ loginTopBtn.addEventListener('click', function(){
     const transactionArea=document.getElementById('login-area');
     transactionArea.style.display='block';
 })
+
+
+// for main Catagories section
+
+
+const laptopSubCatBtn=document.querySelector(".cat-item-1");
+laptopSubCatBtn.addEventListener('click', () =>{
+    console.log("clicked");
+    const subCatLaptop=document.querySelector(".laptop-sub-cat");
+    subCatLaptop.style.display='block';
+})
+
+
+const appleDetailsCatBtn=document.querySelector(".sub-item-1");
+appleDetailsCatBtn.addEventListener('click', () =>{
+    console.log("clicked");
+    const subCatLaptop1=document.getElementById("al-store");
+    subCatLaptop1.style.display='block';
+})
+
+const lenovoDetailsCatBtn=document.querySelector(".sub-item-2");
+lenovoDetailsCatBtn.addEventListener('click', () =>{
+    console.log("clicked");
+    const subCatLaptop2=document.getElementById("ll-store");
+    subCatLaptop2.style.display='block';
+    
+    const subCatLaptop1=document.getElementById("al-store");
+    subCatLaptop1.style.display='none';
+})
+// owl_carousel
+$('.custom_carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
