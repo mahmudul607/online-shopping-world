@@ -3,6 +3,10 @@ body{
    padding: 0;
    box-sizing: border-box;
 }
+.top-bar{
+   margin-left: 20px;
+   margin-right: 20px;
+}
 
 .navbar-nav{
    
@@ -58,74 +62,21 @@ body{
 
 
 
-
-
-/* .hote-line h2{
-   position: relative;
-   font-size: 10vh;
-   text-align: center;
-   color: rgb(39, 33, 55);
-   -webkit-text-stroke: 0.3vw rgb(39, 33, 55);
-   text-transform: uppercase;
-}
-.hote-line h2::before{
-   content: attr(data-text);
-   position:absolute;
-   
-   top: 0;
-   left: 16.5%;
-   width: 70%;
-   height:100%;
-   color: rgb(83, 237, 101);
-   -webkit-text-stroke: 0vw rgb(72, 65, 90);
-   border-right: 2px solid rgb(83, 237, 101);
-   overflow: hidden;
-   animation: animate 6s linear infinite;
-}  
-@keyframes animate{
-   0%{
-      width: 0;
-   }
-   10%{
-      width: 6.6%;
-   }
-   20%{
-      width: 13%;
-   }
-   30%{
-      width: 19.8%;
-   }
-   40%{
-      width: 26.4%;
-   }
-   50%{
-      width: 33%;
-   }
-   60%{
-      width: 39.6%;
-   }
-   70%{
-      width: 46.5%;
-   }
-   80%{
-      width: 52.8%;
-   }
-   90%{
-      width: 59.4%;
-   }  
-  100%{
-      width:66%;
-   }
-} */
-
 .box{
    
-   height: 20rem;
+  
    background-image: linear-gradient(lightblue, blue);
    display: flex;
    flex-direction: column;
    text-align: center;
-   justify-content:end;
+   
+}
+.middle-box{
+   background: white;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
 }
 
 #main-area{
@@ -135,20 +86,20 @@ body{
 .hote-line{
    
    
-   border: 2px solid yellow;
+   
    margin-bottom: 20px;
 }
 .nav-bellow{
    position: relative;
    margin-top: 60px;
-   border: 2px solid yellow;
+   
+   
 }
 .top-login{
    margin-left: 2px;
+   
 }
-.top-form input{
-   /* width: auto; */
-}
+
 
 
 /* login page design */
@@ -173,18 +124,116 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 footer{
    text-align: center;
    font-size: 0.7rem;
    color: gray;
 }
+
+
+/* Advance Css for items */
+
+
+.middle-item{
+   margin-bottom: 20px;
+   background: white;
+}
+
+/* Icon style */
+
+.cat-item{
+   border: 0.2rem solid lightgoldenrodyellow;
+}
+
+
+.laptop-sub-cat img{
+   width: 100%;
+}
+
+.laptop-sub-cat img:hover{
+   width: 120%;
+}
+
+/* animate text */
+
+.brands-animate{
+   position: relative;
+   font-size: 6vh;
+   text-align: center;
+   color: rgb(171, 164, 189, 100);
+   -webkit-text-stroke: 0.3vw rgb(123, 205, 223, 100);
+   text-transform: uppercase;
+}
+.brands-animate::before{
+   content: attr(data-text);
+   position:absolute;
+   
+   top: 0;
+   left: 16.5%;
+   width: 70%;
+   height:100%;
+   color: rgb(17, 20, 178);
+   -webkit-text-stroke: 0vw rgb(141, 219, 255);
+   border-right: 2px solid rgb(83, 237, 101);
+   overflow: hidden;
+   animation: animate2 6s linear infinite;
+}
+
+@keyframes animate2{
+   0%,10%,30%{
+      width: 0;
+   }
+ 
+  80%{
+      width:75%;
+   }
+   100%{
+      width: 75%;
+   }
+
+}
+
+/* display style for product */
+
+.box .laptop-sub-cat{
+   /* display: none; */
+}
+.box .al-store{
+   /* display: none; */
+}
+
+
+
+
+.box .processor-sub-cat{
+   display: none;
+}
+
+.al-store img{
+   width: 80%;
+   margin-bottom: 10px;
+}
+.al-store .row{
+   border: 0.2rem solid rgb(208, 236, 152);
+   border-radius: 1rem;
+   margin-bottom: .4rem;
+   background: white;
+}
+.middle-title{
+   
+   padding: 5px;
+   box-shadow: 5px 6px 50px yellow;
+  
+}
+.fa-heart{
+   width: 50px;
+   font-size: 25px;
+   margin-left: 20px;
+   margin-top: 15px;
+
+}
+.apple-details{
+   background: cadetblue;
+   border-radius: 1rem;
+}
+
