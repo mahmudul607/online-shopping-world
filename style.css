@@ -7,6 +7,11 @@ body{
    margin-left: 20px;
    margin-right: 20px;
 }
+.navbar-brand img{
+   width: 40px;
+   height: 30px;
+   margin-left: 50px;
+}
 
 .navbar-nav{
    
@@ -197,7 +202,7 @@ footer{
    display: none;
 }
 #al-store{
-   display: none;
+   /* display: none; */
 }
 #ll-store{
    display: none;
