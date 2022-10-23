@@ -150,9 +150,7 @@ footer{
    width: 100%;
 }
 
-.laptop-sub-cat img:hover{
-   width: 120%;
-}
+
 
 /* animate text */
 
@@ -202,6 +200,9 @@ footer{
    display: none;
 }
 #ll-store{
+   display: none;
+}
+#wl-store{
    display: none;
 }
 

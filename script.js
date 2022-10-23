@@ -33,6 +33,10 @@ appleDetailsCatBtn.addEventListener('click', () =>{
     console.log("clicked");
     const subCatLaptop1=document.getElementById("al-store");
     subCatLaptop1.style.display='block';
+    const subCatLaptop2=document.getElementById("ll-store");
+    subCatLaptop2.style.display='none';
+    const subCatLaptop3=document.getElementById("wl-store");
+    subCatLaptop3.style.display='none';
 })
 
 const lenovoDetailsCatBtn=document.querySelector(".sub-item-2");
@@ -43,11 +47,27 @@ lenovoDetailsCatBtn.addEventListener('click', () =>{
     
     const subCatLaptop1=document.getElementById("al-store");
     subCatLaptop1.style.display='none';
+    const subCatLaptop3=document.getElementById("wl-store");
+    subCatLaptop3.style.display='none';
 })
+
+const waltonDetailsCatBtn=document.querySelector(".sub-item-3");
+waltonDetailsCatBtn.addEventListener('click', () =>{
+    console.log("clicked");
+    const subCatLaptop3=document.getElementById("wl-store");
+    subCatLaptop3.style.display='block';
+    
+    const subCatLaptop1=document.getElementById("al-store");
+    subCatLaptop1.style.display='none';
+    const subCatLaptop2=document.getElementById("ll-store");
+    subCatLaptop2.style.display='none';
+})
+
+
 // owl_carousel
 $('.custom_carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:6,
     nav:true,
     autoplay: true,
     responsive:{
